@@ -1,12 +1,31 @@
 import { useState } from "react";
 
-export function FormItem() {
+export function FormItem({}) {
   return (
     <>
-        <input
-          type="text"
-        />
-        <button className="btn">Guardar</button>;
+    <form className="new-item-form">
+    <div className="form-row">
+        <label htmlFor="">Nombre</label>
+        <input type="text" name="nombre" id="nombre" />
+        <button className="btn">Guardar</button>
+      </div>
+      <div className="form-row">
+        <label htmlFor="">Fecha de nacimiento</label>
+        <input type="text" name="nombre" id="nombre" />
+        <button className="btn">Guardar</button>
+      </div>
+      <div className="form-row">
+        <label htmlFor="">Edad</label>
+        <input type="text" name="nombre" id="nombre" />
+        <button className="btn">Guardar</button>
+      </div>
+      <div className="form-row">
+        <label htmlFor="">Foto</label>
+        <input placeholder="Default" type="text" name="nombre" id="nombre" />
+        <button className="btn">Guardar</button>
+      </div>
+    </form>
+      
     </>
-  )
+  );
 }
