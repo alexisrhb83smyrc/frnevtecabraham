@@ -4,10 +4,10 @@ export function Info() {
  return (
 
   <li className="list">
-      <ul id="Nombre">Nombre</ul>
-      <ul>Fecha de nacimiento</ul>
-      <ul>Edad</ul>
-      <ul>Foto</ul>
+      <ul id="nombre">Nombre</ul>
+      <ul id="fecha">Fecha de nacimiento</ul>
+      <ul id="edad">Edad</ul>
+      <ul id="foto">Foto</ul>
   </li>
  )
 }
