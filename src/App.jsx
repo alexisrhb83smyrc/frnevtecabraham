@@ -1,7 +1,7 @@
 
 import "./style.css";
-import { useState, useEffect } from "react";
-import { FormItem } from "./Form";
+import { useState} from "react";
+import { FormItem } from "./FormItem";
 import { Info } from "./Info";
 
 function App() {
