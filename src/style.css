@@ -11,6 +11,17 @@ body {
   margin: 0 auto;
 }
 
+.title{
+font-size: 1.5rem;
+font-weight: bold;
+} 
+
+.data {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: whitesmoke;
+}
+
 .new-item-form {
   display: flex;
   flex-direction: column;

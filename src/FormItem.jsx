@@ -1,36 +1,31 @@
 import { useState } from "react";
 
 export function FormItem() {
-  /*const [formValues, setFormValues] = useState({});
-  const handleChange = (e) => {
-    setFormValues({ ...formValues, [e.target.id]: e.target.value });
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formValues);
-  };*/
+  const [name, setName] = useState("");
+  const [birthday, setBirthday] = useState("");
+  const [age, setAge] = useState("");
   return (
     <>
       <form className="new-item-form">
         <div className="form-row">
-          <label htmlFor="nombre">Nombre</label>
+          <label htmlFor="name">Nombre</label>
           <input
             type="text"
-            name="nombre"
-            id="nombre"
-            // value={formValues.name || ""}
-            // onChange={handleChange}
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            name="name"
+            id="name"
             required
           />
         </div>
         <div className="form-row">
           <label htmlFor="fecha">Fecha de nacimiento</label>
           <input
-            type="text"
+            type="date"
+            value={birthday}
+            onChange={(e) => setBirthday(e.target.value)}
             name="fecha"
             id="fecha"
-            // value={formValues.name || ""}
-            // onChange={handleChange}
             required
           />
         </div>
@@ -38,26 +33,26 @@ export function FormItem() {
           <label htmlFor="edad">Edad</label>
           <input
             type="text"
+            value={age}
+            onChange={(e) => setAge(e.target.value)}
             name="edad"
             id="edad"
-            // value={formValues.name || ""}
-            // onChange={handleChange}
             required
           />
         </div>
-        <div className="form-row">
-          <label htmlFor="foto">Foto</label>
-          <input
-            placeholder="Default"
-            type="text"
-            name="foto"
-            id="foto"
-            // value={formValues.name || ""}
-            // onChange={handleChange}
-            required
-          />
-        </div>
-        <button className="btn">Guardar</button>
+        <button className="btn">Borrar</button>
+        <label className="title" htmlFor="name">
+          Nombre:
+          <p className="data" id="name">{name}</p>
+        </label>
+        <label className="title" htmlFor="name">
+          Fecha de nacimiento:
+          <p className="data" id="name">{birthday}</p>
+        </label>
+        <label className="title" htmlFor="name">
+          Edad:
+          <p className="data" id="name">{age}</p>
+        </label>
       </form>
     </>
   );

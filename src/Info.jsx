@@ -1,8 +1,8 @@
+
 import { useState } from "react";
 
 export function Info() {
  return (
-
   <li className="list">
       <ul id="nombre">Nombre</ul>
       <ul id="fecha">Fecha de nacimiento</ul>
@@ -11,3 +11,5 @@ export function Info() {
   </li>
  )
 }
+
+
